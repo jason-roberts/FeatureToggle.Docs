@@ -88,7 +88,7 @@ There are a number of Toggles that come bundled with FeatureToggle
 * SimpleFeatureToggle
 * SqlFeatureToggle (*not available in Windows Phone or Windows Store projects*)
 
-You can also [customize FeatureToggle](/pages/extensibility.html) in a number of ways.
+You can also [customize FeatureToggle]({{ site.url }}/pages/extensibility.html) in a number of ways.
 
 
 ## Using the Bundled Toggles

@@ -7,9 +7,9 @@ This site is in progress and is for V2 when it's released.
 
 #Simple, Reliable Feature Toggles in .NET
 
-[Installation and Basic Usage](/pages/usage.html)
+[Installation and Basic Usage]({{ site.url }}/pages/usage.html)
 
-[Customization and extensibility](/pages/extensibility.html)
+[Customization and extensibility]({{ site.url }}/pages/extensibility.html)
 
 [View on GitHub](https://github.com/jason-roberts/FeatureToggle)
 
