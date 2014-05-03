@@ -9,7 +9,7 @@ FeatureToggle is customisable and extensible in a number of ways.
 
 ## Creating Your Own Custom Toggles
 
-Just implement `IFeatureToggle` and provide an implementation for FeatureEnabled - easy :)
+Just implement `IFeatureToggle` and provide an implementation for `FeatureEnabled` - easy :)
 
 Then just use this as a base class or as a toggle itself.
 
