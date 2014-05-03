@@ -1,4 +1,3 @@
-FeatureToggle.Docs
-==================
+Documentation site for FeatureToggle
 
-Documentation for FeatureToggle
+#[FeatureToggle documentation is here] (http://jason-roberts.github.io/FeatureToggle.Docs/)
