@@ -108,7 +108,8 @@ Add an entry to your AppSettings or Application.Resources to control the value o
 	        <x:String x:Key="FeatureToggle.SaveToPdfFeatureToggle">true</x:String>        
 	</Application.Resources>
 
-**Again, note the convention FeatureToggle.<class name>**
+
+**Again, note the convention FeatureToggle.class name**
 
 Now you can use the Toggle in code:
 
@@ -201,7 +202,7 @@ Add an entries to your AppSettings section for the Sql Server database connectio
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.ConnectionString" value="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleDatabase;Integrated Security=True;Pooling=False"/>
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.SqlStatement" value="select Value from Toggle where ToggleName = 'SaveToPdfFeatureToggle'"/>
 
-## XAML - WPF Windows Phone and Windows Store
+## XAML Binding - WPF, Windows Phone and Windows Store
 
 ###Binding the Visibility of a UI Element to a Toggle
 
