@@ -3,8 +3,6 @@ layout: default
 title: FeatureToggle Documentation Home
 ---
 
-This site is in progress and is for V2 when it's released.
-
 #Simple, Reliable Feature Toggles in .NET
 
 [Installation and Basic Usage](pages/usage.html)
@@ -15,5 +13,5 @@ This site is in progress and is for V2 when it's released.
 
 [Examples](https://github.com/jason-roberts/FeatureToggle/tree/master/src/Examples)
 
-
+[Documentation for v1.x](pages/v1x.html)
 
