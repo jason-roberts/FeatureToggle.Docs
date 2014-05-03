@@ -7,7 +7,7 @@ This site is in progress and is for V2 when it's released.
 
 #Simple, Reliable Feature Toggles in .NET
 
-[Installation and Basic Usage](/pages/usage.html)
+[Installation and Basic Usage](pages/usage.html)
 
 [Customization and extensibility]({{ site.url }}/pages/extensibility.html)
 
