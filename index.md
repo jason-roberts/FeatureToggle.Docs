@@ -1,11 +1,15 @@
 ---
 layout: page
-title: Home
+title: FeatureToggle Documentation Home
 ---
 
-#FeatureToggle.Docs
+#Simple, Reliable Feature Toggles in .NET
 
+[Installation and Basic Usage](/pages/usage.html)
 
-Documentation for FeatureToggle
 
 This site is in progress.
+
+###About Jason Roberts
+
+Jason Roberts is a Microsoft MVP, [Pluralsight course author](http://pluralsight.com/training/Authors/Details/jason-roberts) and Journeyman Software Developer with over 12 years experience. He is the author of the books [Keeping Software Soft](KeepingSoftwareSoft.com) and [C# Tips](http://bit.ly/sharpbook) and writes at his blog [DontCodeTired.com](http://dontcodetired.com). 
