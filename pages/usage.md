@@ -202,6 +202,32 @@ Add an entries to your AppSettings section for the Sql Server database connectio
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.ConnectionString" value="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleDatabase;Integrated Security=True;Pooling=False"/>
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.SqlStatement" value="select Value from Toggle where ToggleName = 'SaveToPdfFeatureToggle'"/>
 
+
+### BooleanRavenDBFeatureToggle
+
+This toggle is not available on Windows Phone or Windows Store apps.
+
+This toggle get it's value from a RavenDB database. 
+
+Create a Toggle for the feature you want to control by inheriting from `BooleanRavenDBFeatureToggle`:
+
+
+	private class SaveToPdfFeatureToggle : BooleanRavenDBFeatureToggle{ }
+
+Add RavenDB connection string to app/web config:
+
+	<connectionStrings>
+		<add name="FeatureToggle.SaveToPdfFeatureToggle" connectionString="Url = http://localhost:8080;database=FeatureToggleInterationTests"/>    
+	</connectionStrings>
+
+The database should contain a collection called "BooleanToggleSettings" with a document for every toggle that contains a property "Enabled":
+
+	{
+	  "Enabled": true
+	}
+
+Check out the [test setup](https://github.com/jason-roberts/FeatureToggle/blob/master/src/Tests/FeatureToggle.RavenDB.Integration.Tests/RavenDBProviderShould.cs#L71) to see an example of writing some toggle config entries.
+
 ## XAML Binding - WPF, Windows Phone and Windows Store
 
 ###Binding the Visibility of a UI Element to a Toggle
