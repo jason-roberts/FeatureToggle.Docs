@@ -84,6 +84,8 @@ There are a number of Toggles that come bundled with FeatureToggle
 * EnabledOnOrBeforeDateFeatureToggle
 * EnabledBetweenDatesFeatureToggle
 * SimpleFeatureToggle
+* RandomFeatureToggle (v2.1)
+* EnabledOnDaysOfWeekFeatureToggle (v2.1)
 * SqlFeatureToggle (*not available in Windows Phone or Windows Store projects*)
 
 You can also [customize FeatureToggle]({{ site.url }}/FeatureToggle.Docs/pages/extensibility.html) in a number of ways.
@@ -202,6 +204,21 @@ Add an entries to your AppSettings section for the Sql Server database connectio
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.ConnectionString" value="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleDatabase;Integrated Security=True;Pooling=False"/>
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.SqlStatement" value="select Value from Toggle where ToggleName = 'SaveToPdfFeatureToggle'"/>
 
+### RandomFeatureToggle
+
+This toggle requires no configuration, it will randomly enable or disable a feature.
+
+### EnabledOnDaysOfWeekFeatureToggle
+
+This toggle will be enabled on specified days of the week.
+
+Configuration for this toggle requires week days to be specified in long format, e.g.
+
+	<add key="FeatureToggle.MondayAndFridayToggle" value="Monday, Friday"/>
+	
+or in XAML:
+
+	<system:String  x:Key="FeatureToggle.FridayImInLoveFeature">Friday</system:String>
 
 ### BooleanRavenDBFeatureToggle
 
