@@ -3,9 +3,6 @@ layout: default
 title: Installing and Using FeatureToggle
 ---
 
-This documentation is under construction.
-
-
 # Installation
 
 FeatureToggle can be installed via NuGet.
@@ -244,6 +241,24 @@ The database should contain a collection called "BooleanToggleSettings" with a d
 	}
 
 Check out the [test setup](https://github.com/jason-roberts/FeatureToggle/blob/master/src/Tests/FeatureToggle.RavenDB.Integration.Tests/RavenDBProviderShould.cs#L71) to see an example of writing some toggle config entries.
+
+### HttpJsonFeatureToggle
+
+This toggle gets it's enabled state from a JSON HTTP endpoint.
+
+Configuration should be the url where the JSON configuration lives, e.g:
+
+	<add key="FeatureToggle.HttpJsonTrueToggle" value="http://localhost:8084/api/test/getenabled" />
+
+As with all the toggles, if url is not available then an exception will be raised, rather than assuming either enabled or disabled.
+
+The expected JSON that should be returned is in the form:
+
+	{"enabled": true}
+
+or
+
+	{"enabled": false}
 
 ## XAML Binding - WPF, Windows Phone and Windows Store
 
