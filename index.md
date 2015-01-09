@@ -19,7 +19,7 @@ Can get the configured toggle value from the built-in default providers, or easi
 
 ###No Magic Strings
 
-Toggles should be real things (objects) not just a loosly typed string. This helps with removing the toggle after use:
+Toggles should be real things (objects) not just a loosely typed string. This helps with removing the toggle after use:
 
 - Can perform a "find uses" of the Toggle class to see where it's used
 - Can just delete the Toggle class and see where build fails.
