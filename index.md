@@ -5,9 +5,11 @@ title: FeatureToggle Documentation Home
 
 #Simple, Reliable Feature Toggles in .NET
 
-[Installation and Basic Usage](pages/usage.html)
+##[Pluralsight Feature Toggle Course](http://bit.ly/psfeaturetoggle)
 
-[Customization and extensibility](pages/extensibility.html)
+##[Installation and Basic Usage](pages/usage.html)
+
+##[Customization and extensibility](pages/extensibility.html)
 
 ##Design Goals
 
