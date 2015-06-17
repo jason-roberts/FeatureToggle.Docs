@@ -81,11 +81,20 @@ There are a number of Toggles that come bundled with FeatureToggle
 * EnabledOnOrBeforeDateFeatureToggle
 * EnabledBetweenDatesFeatureToggle
 * SimpleFeatureToggle
-* RandomFeatureToggle (v2.1)
-* EnabledOnDaysOfWeekFeatureToggle (v2.1)
+* RandomFeatureToggle (from v2.1)
+* EnabledOnDaysOfWeekFeatureToggle (from v2.1)
 * SqlFeatureToggle (*not available in Windows Phone or Windows Store projects*)
+* EnabledOnOrAfterAssemblyVersionWhereToggleIsDefinedToggle (from v3.0)
 
 You can also [customize FeatureToggle]({{ site.url }}/FeatureToggle.Docs/pages/extensibility.html) in a number of ways.
+
+There are also a number of decorators to wrap toggles and add additional features:
+
+* CompositeAndDecorator - true if all "child" toggles are enabled
+* DefaultToDisabledOnErrorDecorator - If an error occurs evaluating the toggle value, just default to disabled (use with caution)
+* DefaultToEnabledOnErrorDecorator - If an error occurs evaluating the toggle value, just default to enabled (use with caution)
+* FixedTimeCacheDecorator - Caches he underlying toggle value for expensive toggle lookups (sql server, remote http, etc)
+
 
 
 ## Using the Bundled Toggles
