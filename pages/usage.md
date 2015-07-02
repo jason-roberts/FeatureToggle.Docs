@@ -210,6 +210,12 @@ Add an entries to your AppSettings section for the Sql Server database connectio
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.ConnectionString" value="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleDatabase;Integrated Security=True;Pooling=False"/>
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.SqlStatement" value="select Value from Toggle where ToggleName = 'SaveToPdfFeatureToggle'"/>
 
+Alternatively as from v3.1 the connection string can be specified in the <connectionStrings> section without the postfixed ".ConnectionString" as shown below:
+
+	<connectionStrings>    
+		<add name="FeatureToggle.MySqlServerToggleFalse" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleIntegrationTests;Integrated Security=True;Pooling=False" />    
+	</connectionStrings>	
+	
 ### RandomFeatureToggle
 
 This toggle requires no configuration, it will randomly enable or disable a feature.
