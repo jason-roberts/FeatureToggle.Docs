@@ -210,11 +210,29 @@ Add an entries to your AppSettings section for the Sql Server database connectio
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.ConnectionString" value="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleDatabase;Integrated Security=True;Pooling=False"/>
 	<add key="FeatureToggle.SaveToPdfFeatureToggle.SqlStatement" value="select Value from Toggle where ToggleName = 'SaveToPdfFeatureToggle'"/>
 
-Alternatively as from v3.1 the connection string can be specified in the <connectionStrings> section without the postfixed ".ConnectionString" as shown below:
+From v3.1 the connection string can be specified in the <connectionStrings> section without the postfixed ".ConnectionString" as shown below:
 
-	<connectionStrings>    
+	<connectionStrings>
 		<add name="FeatureToggle.MySqlServerToggleFalse" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=FeatureToggleIntegrationTests;Integrated Security=True;Pooling=False" />    
-	</connectionStrings>	
+	</connectionStrings>
+
+From v3.2 a named <connectionStrings> can be created with an arbitrary name, and this can referenced from multiple toggle configurations. 
+
+To do this first create a connection:
+
+```
+<connectionStrings>
+    <add name="myAwesomeConnection" connectionString="connection string to db here" />
+</connectionStrings>
+```
+
+Then add an appSettings entry, with the name of the toggle, plus ".ConnectionStringName". The value here points to the named connectionString:
+
+```
+<appSettings>
+    <add key="FeatureToggle.MyFeatureToggle.ConnectionStringName" value="myAwesomeConnection" />
+</appSettings>
+```
 	
 ### RandomFeatureToggle
 
