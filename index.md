@@ -28,7 +28,7 @@ Toggles should be real things (objects) not just a loosely typed string. This he
 
 If a toggle gets its value from a config file, and the config doesn't exist or is invalid, then you'll get an exception.
 
-FeatueToggle will never attempt to guess whether a toggle is enabled or not.
+FeatureToggle will never attempt to guess whether a toggle is enabled or not.
 
 
 [View on GitHub](https://github.com/jason-roberts/FeatureToggle)
