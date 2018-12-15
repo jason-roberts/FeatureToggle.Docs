@@ -3,7 +3,7 @@ layout: default
 title: Extensibility
 ---
 
-#Extensibility
+# Extensibility
 
 FeatureToggle is customisable and extensible in a number of ways.
 
