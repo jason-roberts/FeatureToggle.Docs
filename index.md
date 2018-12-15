@@ -3,7 +3,7 @@ layout: default
 title: FeatureToggle Documentation Home
 ---
 
-#Simple, Reliable Feature Toggles in .NET
+# Simple, Reliable Feature Toggles in .NET
 
 ##[Pluralsight Feature Toggle Course](http://bit.ly/psfeaturetoggle)
 
