@@ -19,7 +19,7 @@ This will also install FeatureToggle.Core which is a PCL package.
 
 ## Getting Started
 
-###1 Create a (strongly typed) toggle
+### 1 Create a (strongly typed) toggle
 
 Create a new class for each feature you want to toggle in your application.
 
@@ -30,7 +30,7 @@ This means feature toggling in the application can be dealt with in a strongly t
 
 	public class MyAwesomeFeature : SimpleFeatureToggle {}
 
-###2 Configure the Toggle
+### 2 Configure the Toggle
 
 The Toggle needs to get its enabled/disabled state from somewhere (unless you are using the `AlwaysOffFeatureToggle` or `AlwaysOnFeatureToggle`).
 
@@ -56,7 +56,7 @@ For Windows Phone and Windows Store apps, configuration is via entries in the ap
 
 In both cases, notice the "FeatureToggle." prefix that is expected before the name of your Toggle (which is the name of your Toggle class).
 
-###3 Use the toggle in code:
+### 3 Use the toggle in code:
 
 	var myAwesomeFeature = new MyAwesomeFeature ();
 	
@@ -71,7 +71,7 @@ Or in XAML (if you've installed the FeatureToggle.WPFExtensions package):
 	<Button Visibility="{Binding Path=MyAwesomeFeature, Converter={StaticResource toggleVisibilityConverter} }">My Awesome Feature</Button>
 
 
-##Bundled Toggles
+## Bundled Toggles
 
 There are a number of Toggles that come bundled with FeatureToggle
 
@@ -295,7 +295,7 @@ or
 
 ## XAML Binding - WPF, Windows Phone and Windows Store
 
-###Binding the Visibility of a UI Element to a Toggle
+### Binding the Visibility of a UI Element to a Toggle
 
 Create a Toggle as described above.
 
